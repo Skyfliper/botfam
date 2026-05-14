@@ -349,4 +349,4 @@ async def on_ready():
 
 import os
 
-bot.run(os.getenv("токен"))
+bot.run(os.getenv("TOKEN"))
