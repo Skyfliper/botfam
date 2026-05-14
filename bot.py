@@ -347,4 +347,6 @@ async def ticket(ctx):
 async def on_ready():
     print(f"Бот запущен как {bot.user}")
 
-bot.run("MTUwNDQ3ODQzNTU3MjA2MDE2MA.GvGqNd.1jyzcK0hd-ZZZLEdwo7nbto0bgsamXpfjBgndQ")
+import os
+
+bot.run(os.getenv("TOKEN"))
