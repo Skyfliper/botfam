@@ -351,8 +351,8 @@ async def ticket(ctx):
         color=discord.Color.from_rgb(18, 18, 18)
     )
 
-    # GIF
-    embed.set_image(
+    # Маленькая GIF справа сверху
+    embed.set_thumbnail(
         url="https://media.discordapp.net/attachments/1256348470659387486/1504386188788895744/graveside_1.gif?ex=6a081dd1&is=6a06cc51&hm=279b665e17b5ade2b554ef3e8bd2e3dc4baf0507ce5fab81ba5b0ceee8c2b1f6&="
     )
 
