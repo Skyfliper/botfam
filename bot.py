@@ -331,37 +331,29 @@ async def ticket(ctx):
     text = f"""
 <:krest:1504881400212492389>   Твой путь может начаться прямо сейчас.   <:krest:1504881400212492389>
 
-     <:zvzda1:1504881284990898207>   Заявки - **ОТКРЫТЫ**   <:zvzda1:1504881284990898207>               
+                        ✝︎ ᴛɪᴄᴋᴇᴛꜱ ᴏᴘᴇɴ 𐕣
+                                  ↓↓↓
 
-<:zvzda2_1:1504881604013719562> **Перед подачей ознакомься с критериями** <:zvzda2_1:1504881604013719562>
+<:zvzda2_1:1504881604013719562> Перед подачей ознакомься с критериями <:zvzda2_1:1504881604013719562>
 
-       <:krest1:1504881443178942596> Минимальный возраст: **14+ лет** <:krest1:1504881443178942596>
+       <:krest1:1504881443178942596> Минимальный возраст: 14+ лет <:krest1:1504881443178942596>
 
-        <:zvzda1:1504881284990898207> Подойдёт любой откат с **DM** <:zvzda1:1504881284990898207>
+        <:zvzda1:1504881284990898207> Подойдёт любой откат с DM <:zvzda1:1504881284990898207>
 
-<:krest:1504881400212492389> **Для подачи заявки нажми на кнопку ниже** <:krest:1504881400212492389>
-                                  
+<:krest:1504881400212492389> Для подачи заявки нажми на кнопку <:krest:1504881400212492389>
+                                  ↓↓↓
 
-                        
+                        «Подать заявку»
 """
-
-embed = discord.Embed(
-    description=text,
-    color=discord.Color.from_rgb(18, 18, 18)
-)
-
-embed.set_thumbnail(
-    url="https://media.discordapp.net/attachments/1256348470659387486/1504386188788895744/graveside_1.gif?ex=6a081dd1&is=6a06cc51&hm=279b665e17b5ade2b554ef3e8bd2e3dc4baf0507ce5fab81ba5b0ceee8c2b1f6&="
-)
-
-await ctx.send(
-    embed=embed,
-    view=TicketButton()
-)
 
     embed = discord.Embed(
         description=text,
         color=discord.Color.from_rgb(18, 18, 18)
+    )
+
+    # GIF
+    embed.set_image(
+        url="https://media.discordapp.net/attachments/1256348470659387486/1504386188788895744/graveside_1.gif?ex=6a081dd1&is=6a06cc51&hm=279b665e17b5ade2b554ef3e8bd2e3dc4baf0507ce5fab81ba5b0ceee8c2b1f6&="
     )
 
     await ctx.send(
