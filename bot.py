@@ -145,6 +145,12 @@ class ApplicationModal(discord.ui.Modal, title="Заявка в семью"):
             value=self.prime.value,
             inline=False
         )
+        
+        embed.add_field(
+    name="ꜰᴀᴍǫ ʜɪꜱᴛᴏʀʏ",
+    value=self.history.value,
+    inline=False
+)
 
         embed.add_field(
             name="📎 Пользователь",
