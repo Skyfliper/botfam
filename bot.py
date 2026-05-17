@@ -52,13 +52,13 @@ class ApplicationModal(discord.ui.Modal, title="Заявка в семью"):
         label="ᴏᴛᴋᴀᴛ ᴠᴢᴘ/ᴅᴍ",
         required=True
     )
-    
-        prime = discord.ui.TextInput(
+
+    prime = discord.ui.TextInput(
         label="ᴘʀɪᴍᴇ ᴛɪᴍᴇ",
         required=True
     )
 
-        history = discord.ui.TextInput(
+    history = discord.ui.TextInput(
         label="ꜰᴀᴍǫ ʜɪꜱᴛᴏʀʏ",
         required=True
     )
@@ -66,7 +66,6 @@ class ApplicationModal(discord.ui.Modal, title="Заявка в семью"):
     async def on_submit(self, interaction: discord.Interaction):
 
         guild = interaction.guild
-
         # =========================
         # СОЗДАНИЕ КАТЕГОРИИ
         # =========================
