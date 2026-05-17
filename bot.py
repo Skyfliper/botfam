@@ -44,22 +44,22 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 class ApplicationModal(discord.ui.Modal, title="Заявка в семью"):
 
     name = discord.ui.TextInput(
-        label="Имя IRL",
-        required=True
-    )
-
-    age = discord.ui.TextInput(
-        label="Возраст (14+)",
+        label="ɴᴀᴍᴇ ɪʀʟ",
         required=True
     )
 
     dm_proof = discord.ui.TextInput(
-        label="Откат с ДМ (любой подойдет)",
+        label="ᴏᴛᴋᴀᴛ ᴠᴢᴘ/ᴅᴍ",
+        required=True
+    )
+    
+        prime = discord.ui.TextInput(
+        label="ᴘʀɪᴍᴇ ᴛɪᴍᴇ",
         required=True
     )
 
-    hours = discord.ui.TextInput(
-        label="История фам | Часы в игре",
+        history = discord.ui.TextInput(
+        label="ꜰᴀᴍǫ ʜɪꜱᴛᴏʀʏ",
         required=True
     )
 
@@ -136,20 +136,14 @@ class ApplicationModal(discord.ui.Modal, title="Заявка в семью"):
         )
 
         embed.add_field(
-            name="🎂 Возраст",
-            value=self.age.value,
-            inline=False
-        )
-
-        embed.add_field(
-            name="🚫 Откат с ДМ",
+            name="ᴏᴛᴋᴀᴛ ᴠᴢᴘ/ᴅᴍ",
             value=self.dm_proof.value,
             inline=False
         )
 
         embed.add_field(
-            name="⏱️ Часы",
-            value=self.hours.value,
+            name="ᴘʀɪᴍᴇ ᴛɪᴍᴇ",
+            value=self.prime.value,
             inline=False
         )
 
